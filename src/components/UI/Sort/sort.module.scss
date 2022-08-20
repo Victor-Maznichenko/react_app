@@ -1,0 +1,52 @@
+.sorting {
+  max-width: 220px;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  padding: 23px 14px 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 0;
+}
+
+.open .container {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.containerItem {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+  transition: all 0.15s;
+  cursor: pointer;
+  & + & {
+    margin-top: 20px;
+  }
+}
+.containerItemActive {
+  font-weight: 700;
+  color: #fe5f1e;
+}
+
+.top {
+  span {
+    font-size: 14px;
+    letter-spacing: 0.015em;
+    margin-top: -2px;
+    color: var(--orange);
+    border-bottom: 2px dotted var(--orange);
+    cursor: pointer;
+  }
+}

@@ -1,59 +1,58 @@
 .header {
-    padding: 40px 0 75px;
-
+  padding: 40px 0 75px;
 }
 
 .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
+  display: flex;
 }
 
 .logoTitle {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }
 
 .logoImg {
-    display: block;
-    margin-right: 15px;
+  display: block;
+  margin-right: 15px;
 }
 
 .purchase {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
 }
 
 .purchasePrice {
-    padding: 0 13px 0 0;
+  padding: 0 13px 0 0;
 }
 
 .purchaseCart {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-    img {
-        display: inline-block;
-        margin-right: 8px;
-    }
+  img {
+    display: inline-block;
+    margin-right: 8px;
+  }
 
-    padding: 0 0 0 14px;
+  padding: 0 0 0 14px;
 
-    &::before {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.25);
-        left: 0;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    left: 0;
+  }
 }

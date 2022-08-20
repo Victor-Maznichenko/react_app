@@ -99,47 +99,6 @@ b {
   }
 }
 
-.sorting {
-  max-width: 220px;
-  width: 100%;
-
-  &__top {
-    span {
-      font-size: 14px;
-      letter-spacing: 0.015em;
-      margin-top: -2px;
-      color: $orange;
-      border-bottom: 2px dotted $orange;
-    }
-  }
-
-  &__container {
-    display: none;
-  }
-}
-
-.orange_btn {
-  background-color: $orange;
-  border: 1px solid $orange;
-  color: $white;
-  border-radius: 30px;
-
-  & svg {
-    fill: $white;
-  }
-}
-
-.outline_btn {
-  background-color: transparent;
-  border: 1px solid $orange;
-  color: $orange;
-  border-radius: 30px;
-
-  & svg {
-    fill: $orange;
-  }
-}
-
 .counter {
   display: flex;
   align-items: center;

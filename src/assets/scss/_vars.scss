@@ -1,8 +1,18 @@
 $container_width: 1250px;
 $black: #000;
 $white: #fff;
-$grey_white: #D3D3D3;
-$grey: #8D8D8D;
+$grey_white: #d3d3d3;
+$grey: #8d8d8d;
 $dark_grey: #282828;
-$orange: #FE5F1E;
-$yellow: #FFDF8C;
+$orange: #fe5f1e;
+$yellow: #ffdf8c;
+:root {
+  --container_width: 1250px;
+  --black: #000;
+  --white: #fff;
+  --grey_white: #d3d3d3;
+  --grey: #8d8d8d;
+  --dark_grey: #282828;
+  --orange: #fe5f1e;
+  --yellow: #ffdf8c;
+}

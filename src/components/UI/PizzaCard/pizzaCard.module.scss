@@ -1,70 +1,68 @@
 .pizza {
-    max-width: 278px;
-    width: 100%;
-    text-align: center;
-
-    &:nth-child(n + 5) {
-        margin-top: 30px;
-    }
+  max-width: 278px;
+  width: 100%;
+  text-align: center;
 }
-
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .thickness,
 .width {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .thickness {
-    .option {
-        max-width: calc((100% / 2) - 5px);
-    }
+  .option {
+    max-width: calc((100% / 2) - 5px);
+  }
 }
 
 .width {
-    margin-top: 5px;
+  margin-top: 5px;
 
-    .option {
-        max-width: calc((100% / 3) - 5px);
-    }
+  .option {
+    max-width: calc((100% / 3) - 5px);
+  }
 }
 
 .bottom {
-    margin-top: 17px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .btn {
-    padding: 9px 14px 9px 17px;
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    height: 40px;
-    font-size: 16px;
-    line-height: 19px;
+  padding: 9px 14px 9px 17px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  height: 40px;
+  font-size: 16px;
+  line-height: 19px;
 
-    svg {
-        margin-right: 8px;
-        fill: #EB5A1E
-    }
+  svg {
+    margin-right: 8px;
+    fill: #eb5a1e;
+  }
 }
 
-
 .title {
-    margin: 10px 0 20px;
-    font-weight: 800;
-    font-size: 20px;
-    letter-spacing: 0.01em;
-    line-height: 24px;
+  margin: 10px 0 20px;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  line-height: 24px;
 }
 
 .price {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    letter-spacing: 0.015em;
-    color: #000000;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+  color: #000000;
 }
