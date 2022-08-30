@@ -3,7 +3,7 @@ import styles from "./button.module.scss";
 
 function Button({ children, fill, className }) {
   return (
-    <div className={`${styles.button} ${fill ? styles.fill : ""} ${className}`}>
+    <div className={`${styles.root} ${fill ? styles.fill : ""} ${className}`}>
       {children}
     </div>
   );

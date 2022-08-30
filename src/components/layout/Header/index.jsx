@@ -1,16 +1,18 @@
 import React from "react";
-import styles from "./header.module.scss";
+import { Link } from "react-router-dom";
 
-//Import Icons
+//Import styles and icons
+import styles from "./header.module.scss";
 import IconLogo from "assets/images/logo.svg";
 import IconCart from "assets/images/cart.svg";
 import Button from "components/UI/Button";
+import Search from "components/UI/Search";
 
 function Header() {
   const totalPrice = 520;
 
   return (
-    <header className={styles.header}>
+    <header className={styles.root}>
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.logo}>
@@ -24,16 +26,20 @@ function Header() {
               </p>
             </div>
           </div>
-          <Button fill className={styles.purchase}>
-            <div className={styles.purchasePrice}>
-              <span>{totalPrice}</span> ₽
-            </div>
-            <span className={styles.purchaseCart}>
-              <img src={IconCart} alt="Cart icon" />
-              <span>3</span>
-            </span>
-          </Button>
+          <Search className={styles.search}/>
+          <Link to="/cart">
+            <Button fill className={styles.purchase}>
+              <div className={styles.purchasePrice}>
+                <span>{totalPrice}</span> ₽
+              </div>
+              <span className={styles.purchaseCart}>
+                <img src={IconCart} alt="Cart icon" />
+                <span>3</span>
+              </span>
+            </Button>
+          </Link>
         </div>
+        <Search className={styles.searchMobile}/>
       </div>
     </header>
   );

@@ -7,25 +7,33 @@ import styles from "./pizzaCard.module.scss";
 
 function PizzaCard({ id, imageUrl, title, types, sizes, price, className }) {
   const pizzaTypes = ["тонкое", "традиционное"];
-  const pizzaSizes = sizes.map((size, id) => (
-    <Option className={styles.option} text={size + " см."} key={id} />
-  ));
+  const pizzaSizes = [26, 30, 40];
 
   return (
     <div className={`${styles.pizza} ${className}`}>
       <img src={imageUrl} alt="" className={styles.img} />
-      <h3 className={styles.title}>Чизбургер-пицца</h3>
+      <h3 className={styles.title}>{title}</h3>
       <div className={styles.options}>
         <div className={styles.thickness}>
-          {types.map((type, id) => (
+          {pizzaTypes.map((pizzaType, id) => (
             <Option
               className={styles.option}
-              text={pizzaTypes[type]}
-              key={id}
+              text={pizzaType}
+              disabled={!types.includes(id)}
+              key={'type_' + id}
             />
           ))}
         </div>
-        <div className={styles.width}>{pizzaSizes}</div>
+        <div className={styles.width}>
+          {pizzaSizes.map((pizzaSize, id) => (
+            <Option
+              className={styles.option}
+              disabled={!sizes.includes(pizzaSize)}
+              text={pizzaSize + " см."}
+              key={'size_' + id}
+            />
+          ))}
+        </div>
       </div>
       <div className={styles.bottom}>
         <div className={styles.price}>

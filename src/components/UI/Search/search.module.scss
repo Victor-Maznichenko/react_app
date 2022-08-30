@@ -1,0 +1,51 @@
+.root {
+  outline: none;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+}
+.label {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(#000, 0.1);
+  padding: 12px 20px 12px 10px;
+  border-radius: 15px;
+  transition: all 0.15s;
+  width: 27.77vw;
+  &:focus-within {
+    border: 1px solid rgba(#000, 0.4);
+    .icon {
+      fill: rgba(#000, 0.6);
+    }
+  }
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  fill: rgba(#000, 0.3);
+  pointer-events: none;
+  transition: all 0.15s;
+}
+@media (max-width: 1024px) {
+  .label {
+    padding: 8px 12px 8px 7px;
+  }
+  .icon {
+    width: 15px;
+    height: 15px;
+  }
+  .root {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .label {
+    padding: 4px 12px 4px 7px;
+  }
+  .icon {
+    width: 12px;
+    margin-right: 3px;
+    height: 12px;
+  }
+}

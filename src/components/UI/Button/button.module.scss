@@ -1,10 +1,11 @@
-.button {
+.root {
   background-color: transparent;
   border: 1px solid #fe5f1e;
   color: #fe5f1e;
-  border-radius: 30px;
+  border-radius: 2.08vw;
   padding: 14px 18px 13px;
   transition: all 0.25s;
+  font-size: 1.04vw;
   cursor: pointer;
 
   svg {
@@ -24,4 +25,21 @@
 .fill {
   background-color: #fe5f1e;
   color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .root{
+    padding: 8px 14px 8px;
+  }
+}
+@media (max-width: 768px) {
+  .root{
+    padding: 4px 10px 4px;
+  }
+}
+@media (max-width: 425px) {
+  .root{
+    padding: 7px 10px;
+    font-size: 7px;
+  }
 }

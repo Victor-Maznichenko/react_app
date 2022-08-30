@@ -1,5 +1,5 @@
-.sorting {
-  max-width: 220px;
+.root {
+  max-width: 15.97vw;
   width: 100%;
   position: relative;
 }
@@ -14,7 +14,8 @@
   border-radius: 10px;
   position: absolute;
   z-index: 1;
-  top: 100%;
+  top: calc(100% + 5px);
+  border: 1px solid #eaeaea;
   right: 0;
 }
 
@@ -26,8 +27,8 @@
 .containerItem {
   font-family: "Proxima Nova", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.97vw;
+  line-height: 121%;
   letter-spacing: 0.015em;
   transition: all 0.15s;
   cursor: pointer;
@@ -41,12 +42,58 @@
 }
 
 .top {
+  font-size: 1.04vw;
   span {
-    font-size: 14px;
+    font-size: 0.97vw;
     letter-spacing: 0.015em;
     margin-top: -2px;
     color: var(--orange);
     border-bottom: 2px dotted var(--orange);
     cursor: pointer;
+  }
+}
+.topOrderAsc,
+.topOrderDesc {
+  position: relative;
+  z-index: 3;
+  padding: 0 4px;
+  font-size: 1.38vw;
+  color: var(--orange);
+}
+.topOrderDesc {
+  transform: rotateX(180deg) translateY(-5px);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 16px 10px 10px;
+  }
+  .containerItem + .containerItem {
+    margin-top: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .top span {
+    border-bottom: 1px dotted var(--orange);
+  }
+}
+@media (max-width: 425px) {
+  .top,
+  .top span,
+  .containerItem {
+    font-size: 8px;
+  }
+  .root {
+    display: inline-block;
+    max-width: none;
+    width: auto;
+  }
+  .top {
+    display: inline-block;
+  }
+  .topOrderAsc,
+  .topOrderDesc {
+    font-weight: 700;
+    font-size: 12px;
   }
 }
