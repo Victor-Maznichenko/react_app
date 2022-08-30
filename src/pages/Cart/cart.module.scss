@@ -1,0 +1,137 @@
+.cartTop,
+.cartBottom,
+.cartTotal,
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartItemStart {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.cartItems {
+  margin-bottom: 40px;
+}
+.back {
+  border: 1px solid #d3d3d3;
+  color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: transparent;
+    color: #d3d3d3;
+  }
+  img {
+    display: block;
+    margin-right: 10px;
+  }
+}
+.cartTotal {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.cartContent {
+  max-width: 850px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.cartClear {
+  display: flex;
+  align-items: center;
+  color: #b6b6b6;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.cartTitle {
+  display: flex;
+  align-items: center;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+  img {
+    margin-right: 15px;
+    display: block;
+  }
+}
+.cartItem {
+  height: 80px;
+  & + & {
+    margin-top: 60px;
+  }
+}
+.cartTop {
+  margin-bottom: 30px;
+}
+.cartItemImg {
+  margin-right: 15px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.cartItemName {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.cartItemProperties {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #8d8d8d;
+}
+.cartItemPrice,
+.cartItemCounter {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+}
+
+.cartTotalPrice b {
+  color: var(--orange);
+}
+.cartContentEmpty {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-bottom: 140px;
+}
+.emptyInner {
+  text-align: center;
+}
+.emptyTitle {
+  margin-bottom: 10px;
+}
+.emptyText {
+  font-size: 18px;
+  line-height: 145.4%;
+  letter-spacing: 0.01em;
+  color: #777777;
+  margin-bottom: 45px;
+}
+.emptyImg{
+  max-width: 100%;
+  margin-bottom: 75px;
+}
+.emptyBack {
+  color: #fff;
+  background-color: #282828;
+  border-color: #282828;
+  display: inline-block;
+  &:hover {
+    background-color: #282828;
+  }
+}

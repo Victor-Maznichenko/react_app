@@ -1,0 +1,45 @@
+.root {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 0.97vw;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+  color: #2c2c2c;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px 8px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+
+  & + & {
+    margin-left: 5px;
+  }
+
+  &:disabled {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .root {
+    line-height: 100%;
+    padding: 8px 6px;
+  }
+}
+@media (max-width: 768px) {
+  .root {
+    border-radius: 2px;
+    line-height: 100%;
+    padding: 5px 6px;
+    & + & {
+      margin-left: 3px;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .root{
+    font-size: 7px;
+  }
+}
